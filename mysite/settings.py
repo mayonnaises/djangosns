@@ -13,6 +13,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'accounts.apps.AccountsConfig',
     'post.apps.PostConfig',
 ]
 
@@ -80,6 +81,8 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
+
+AUTH_USER_MODEL = 'accounts.User'
 
 
 # 以下の記述は不要です
